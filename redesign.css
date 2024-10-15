@@ -1,0 +1,261 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+body {
+	background-color: #1a222b;
+	color: #cad3f5;
+	font-family: Rubik ,Roboto, 'Noto Sans', sans-serif;
+  line-height: 1rem;
+  
+}
+
+input, button, select, tr, label {
+	font-family: inherit;
+}
+
+.insBox{
+  padding:10px!important;
+}
+
+a, div.bUpd > input, div.bLink > div > a, div.bigButDis > div > b > div > span, a:hover, div.bLink > div > a:hover {
+	color: inherit;
+}
+
+div.bLink > div > a{
+  padding: 10px 0px;
+}
+
+a:hover {
+	text-decoration: underline;
+}
+
+hr {
+	border: none;
+}
+
+div.navLink {
+	box-sizing: border-box;
+	height: 3rem;
+	background-color: #ff5277;
+	background-image: none;
+	border: none;
+	color: white;
+  font-size: 1.3rem;
+	display: flex;
+	align-items: center;
+}
+
+div.navLink > div, div.navLinkRestrict > div {
+	height: auto;
+}
+
+details:not([open]) {
+	color: #a5adcb;
+}
+
+summary {
+	margin: 1rem;
+	cursor: pointer;
+}
+
+summary::before {
+	visibility: hidden;
+	position: absolute;
+	left: 0;
+	background-image: none;
+	content: '\2023';
+	transform: none !important;
+	transition: none;
+}
+
+body > details > summary:hover::before, body > details[open] > summary::before {
+	visibility: visible;
+}
+
+div.bigButLink, div.bigButDis {
+	padding: 0;
+	background-color: transparent;
+}
+
+div.bigButLink > div, div.bigButDis > div, .newBox {
+	padding: .2rem;
+	background-color: #363a4f;
+	border: none;
+	border-radius: .5rem;
+	box-shadow: none;
+	clip-path: inset(0 round .3rem)
+}
+
+div.bigButLink > div {
+	padding: 0;
+}
+
+div.bigButLink > div:hover {
+	background-color: #6e738d;
+}
+
+div.bigButLink > div > a {
+	display: block;
+	padding: .2rem;
+}
+
+div.bigButLink > div > a > div{
+  height: 56px;
+  font-size:1.3rem;
+}
+
+.textOther, .submitDis, .submitStd {
+	color: #b8c0e0;
+}
+
+.textOk, .submitEarly {
+	color: #a6da95;
+}
+
+.textCrit, .submitLate {
+	color: #ed8796;
+}
+
+.textWarn {
+	color: #f5a97f;
+}
+
+.lrtbSepCell, .ltbSepCell, .rtbSepCell, .tbSepCell {
+	background-color: transparent;
+	border: none;
+}
+
+div.bUpd, div.bLink, div.bDel {
+	padding: 0;
+	background: transparent;
+}
+
+div.bUpd > input, div.bLink > div, div.bDel > div {
+	padding: .1rem;
+	background-color: #494d64;
+	border: none;
+	border-radius: .3rem;
+	color: #cad3f5;
+	cursor: pointer;
+}
+
+div.bUpd > input:hover, div.bLink > div:hover, div.bDel > div:hover {
+	background-color: #6e738d;
+}
+
+div.bLink > div:hover a:hover, div.bDel > div:hover a:hover {
+	text-decoration: none;
+}
+
+.lrtbOkSepCell, .ltbOkSepCell, .rtbOkSepCell, .tbOkSepCell {
+	background-color: #7ae774	;
+	border: none;
+	color: #ffffff;
+}
+
+.lrtbHalfSepCell, .ltbHalfSepCell, .rtbHalfSepCell, .tbHalfSepCell {
+	background-color: #8bd5ca;
+	border: none;
+	color: #181926;
+}
+
+.lrtbFailSepCell, .ltbFailSepCell, .rtbFailSepCell, .tbFailSepCell {
+	background-color: #ed8796;
+	border: none;
+	color: #181926;
+}
+
+.lrtbWaitSepCell, .ltbWaitSepCell, .rtbWaitSepCell, .tbWaitSepCell {
+	background-color: #eed49f;
+	border: none;
+	color: #181926;
+}
+
+form > center > .topLayout:not(:first-child) > .newBox, center > .newBox {
+	padding: 0;
+}
+
+form > center > .topLayout:not(:first-child) > .newBox > table > tbody > tr > td, center > .newBox > table > tbody > tr > td {
+	padding: .2rem .5rem;
+}
+
+.stickyTable {
+	top: 3rem !important;
+}
+
+table.resultLayout > thead > tr > td {
+	background-color: #494d64;
+	border: .1rem solid #24273a;
+}
+
+table.resultLayout > tbody > tr > td, table.resultLayout > tbody > tr > td:nth-child(2), 
+.hdrUp, .hdrDown, .hdrDis, table.listLayout > tbody > tr > td	{
+	background-color: #363a4f;
+	border: .1rem solid #24273a;
+}
+
+table.resultLayout > thead > tr > td, table.resultLayout > thead > tr > td >	a, table.resultLayout > tbody > tr > td {
+	padding: .25rem;
+	text-align: right;
+}
+
+table.resultLayout > thead > tr:first-child > td:not(:first-child):not(:last-child), table.resultLayout > thead > tr:first-child > td:not(:first-child):not(:last-child) a {
+	text-align: center;
+}
+
+table.resultLayout > tbody > tr:hover > td, table.resultLayout > tbody > tr:hover > td:nth-child(2) {
+	background-color: #6e738d;
+}
+
+.but1 {
+	background-color: transparent;
+	padding: 0;
+}
+
+input.std, input.stdDis, input.test, input.testDis, input.flt, input.fltDis, input.seek, input.seekDis, input.err {
+	padding: .3rem;
+	background-color: #494d64;
+	border: none;
+	border-radius: .3rem;
+	color: inherit;
+}
+
+div.bDel > div > a {
+	color: #ed8796;
+}
+
+div.bDel > div:hover {
+	background-color: #ed8796;
+}
+
+div.bDel > div > a:hover {
+	background-color: transparent;
+	color: #1e2030;
+}
+
+div.bUpd > input{
+  padding: 10px 10px!important;
+  margin-right: -5px;
+}
+
+details.menuList > div > div{
+  margin-bottom: 25px;
+}
+
+div.bigButDis > div > b > div{
+  height: 56px;
+  font-size: 1.3rem;
+}
+
+div.bigButLink{
+  color:white;
+}
+
+div.bigButLink > div , div.bigButDis > div{
+  padding-left: 10px;
+}
+
+div.bigButDis{
+  color:#ff5264;
+}
